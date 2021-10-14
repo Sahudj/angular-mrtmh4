@@ -1,0 +1,22 @@
+<!-- #docregion mat-menu-trigger-for -->
+<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+<!-- #enddocregion mat-menu-trigger-for -->
+<mat-menu #menu="matMenu" class="matmenu">
+  <div class="head" mat-menu-item><span >Notification</span><i class="fas fa-cog"></i></div>
+  <div class="noticont" mat-menu-item><span class="material-icons custom-approve">
+  verified
+  </span>Item 2</div>
+  <div class="noticont" mat-menu-item><span class="material-icons disapprove">
+  highlight_off
+  </span>Item 3</div>
+  <div class="noticont" mat-menu-item><span class="material-icons custom-approve">
+  verified
+  </span><span>Item 4</span></div>
+  <div class="noticont" mat-menu-item><span class="material-icons">
+  watch_later
+  </span>Item 5</div>
+</mat-menu>
+
+<!-- Copyright 2021 Google LLC. All Rights Reserved.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at http://angular.io/license -->
